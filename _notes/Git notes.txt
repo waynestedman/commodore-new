@@ -15,3 +15,5 @@ $ add repo
 Locally:
 $ git remote add origin https://github.com/waynestedman/commodore-new.git
 $ git push -u origin master
+
+in GitHub desktop, File -> Add Local Repository
