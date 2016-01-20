@@ -10,12 +10,8 @@ create first commit:
 $ git commit -m "First Commit"
 
 Go to GitHub:
-add repo
+$ add repo
 
 Locally:
-git remote add origin https://github.com/waynestedman/commodore-new.git
-git push -u origin master
-
-if fatal error on ‘add origin’ :
-git remote set-url origin https://github.com/waynestedman/commodore-new.git
-
+$ git remote add origin https://github.com/waynestedman/commodore-new.git
+$ git push -u origin master

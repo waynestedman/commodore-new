@@ -1,3 +1,3 @@
-# Read Me file
+# New Commodore Project
 
-Collection of files and folders that form the foundation of a project.
+All files (except images) and folders for New Commodore website project.
