@@ -1,0 +1,34 @@
+Darkening color mixin
+
+@mixin colored-event-types ($count, $baseName, $startcolor) {
+    @for $i from 0 through $count {
+        $background-color: darken($startcolor, $i * $i); 
+    .event-type#{$i} {
+      background: $background-color;
+      height:100px;
+      width:200px;
+      float: left;
+      margin-right: 5px;
+    }
+   }
+    
+}
+ @include colored-event-types(5,'a',$comm-lt-blue);
+
+
+
+***** original code *****
+@mixin color-divs ($count, $baseName, $startcolor) {
+    @for $i from 0 through $count {
+        $background-color: darken($startcolor, $i * $i); 
+    .colored-div#{$i} {
+      background: $background-color;
+      height:100px;
+      width:200px;
+      float: left;
+      margin-right: 5px;
+    }
+   }
+    
+}
+ @include color-divs(5,'a',#ffd8b1);

@@ -1,0 +1,86 @@
+.site-content {
+	margin-top: -20px;
+	margin-top: -1.25rem;
+	background-image: url("images/commodore-background.png"); 
+	width: $size__site-main;
+
+	.content-area {
+		margin: 24px;
+		margin: 1.5rem;
+		display: inline-block;
+		color: $comm-grey;
+
+		.home-main {
+			float: left;
+			width: $size__site-main - 65%;
+			padding: 20px;
+			padding: 1.25rem;
+			background: lighten($comm-gold, 18%);
+			border: 1px solid #000;
+			
+			article {
+				margin-bottom: 0;
+			} // article in main area
+		} // home-main
+		
+		.events-main {
+			float: left;
+			width: $size__site-main;
+			padding: 20px;
+			padding: 1.25rem;
+			background: lighten($comm-gold, 18%);
+			border: 1px solid #000;
+			
+			article {
+				margin-bottom: 0;
+			} // article in main area
+		} // events-main
+
+		.events-list {
+			float: right;
+			display: block;
+			width: $size__site-main - 41%;
+			
+			ul {
+				list-style-type: none;
+				display: flex;
+				flex-flow: column wrap;
+				justify-content: space-between;
+				margin: 0;
+
+				li {
+					margin-bottom: 16px;
+					margin-bottom: 1rem;
+					padding: 16px;
+					padding: 1rem;
+					border: 1px solid #000;
+				
+					a {
+						text-decoration: none;
+						color: $comm-grey;
+
+						h2 {
+
+						} // h2
+
+						p {
+							margin-bottom: 0;
+						} // p 
+					} // a
+				} // li
+			} // ul
+
+			.main-event-type {
+				flex: 2;
+				background: $comm-gold;
+			} // main-event-type
+	// for .event-type# styles see mixins-master
+		} // events-list
+	} // content-area
+} // site-content
+
+.site-main {
+	margin: 0;
+	width: $size__site-main;
+}
+
