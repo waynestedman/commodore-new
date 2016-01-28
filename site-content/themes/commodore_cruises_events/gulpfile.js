@@ -5,17 +5,20 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     concat = require('gulp-concat');
 
-var sassSources = ['_components/sass/style.scss'];
-
 var jsSources = [
 	'_components/js/main.js'
 ];
+
+var sassSources = ['_components/sass/style.scss'];
+var htmlSources = ['*.html'];
+var phpSources = ['*.php', 'template-parts/*.php'];
 
 gulp.task('js', function() {
 	gulp.src(jsSources)
 		.pipe(concat('main.js'))
 		.pipe(browserify())
 		.pipe(gulp.dest('_development/js'));
+		.pipe(livereload());
 });
 
 gulp.task('compass', function() {
@@ -32,5 +35,20 @@ gulp.task('compass', function() {
 
 gulp.task('watch', function() {
   livereload.listen();
+  gulp.watch(jsSources, ['js']);
   gulp.watch('_components/sass/*.scss', ['compass']);
+  gulp.watch(htmlSources, ['html']);
+  gulp.watch(phpSources, ['php']);
 });
+
+gulp.task('html', function() {
+	gulp.src(htmlSources)
+		.pipe(livereload());
+});
+
+gulp.task('php', function() {
+	gulp.src(phpSources)
+		.pipe(livereload());
+});
+
+gulp.task('default', ['php', 'html', 'js', 'compass', 'watch']);
