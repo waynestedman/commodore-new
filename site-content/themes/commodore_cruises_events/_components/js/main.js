@@ -1,3 +1,5 @@
+$ = require 'jquery'
+
 (function($) {
 // Settings for the lightbox
 	var cbSettings = {

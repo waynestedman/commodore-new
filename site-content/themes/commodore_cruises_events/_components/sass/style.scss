@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Pacific Web Foundry
 Author URI: http://pacificwebfoundry.com/
 Description: Commodore Cruises and Events custom theme.
-Version: 1.0.4
+Version: 1.2.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: commodore_cruises_events
@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# General setup
 # Normalize
 # Typography
 # Elements
@@ -43,6 +44,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+/*--------- # General setup ---------*/
+
+@import "compass";
+@import "compass/reset";
+@import "bourbon/bourbon";
+// @import "base/grid-settings";
+// @import "neat/neat";
+// @import "base/base";
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
