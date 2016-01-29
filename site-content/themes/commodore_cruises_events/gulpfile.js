@@ -5,19 +5,37 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     concat = require('gulp-concat');
 
-var jsSources = [
+var env,
+	jsSources,
+	sassSources,
+	htmlSources,
+	phpSources,
+	outputDir,
+	sassStyle;
+
+env = process.env.NODE_ENV || 'development';
+
+if (env==='development') {
+	outputDir = '_development/', '/';
+	sassStyle = 'expanded';
+} else {
+	outputDir = '/';
+	sassStyle = 'compressed';
+}
+
+
+jsSources = [
 	'_components/js/main.js'
 ];
-
-var sassSources = ['_components/sass/style.scss'];
-var htmlSources = ['*.html'];
-var phpSources = ['*.php', 'template-parts/*.php'];
+sassSources = ['_components/sass/style.scss'];
+htmlSources = ['*.html'];
+phpSources = ['*.php', 'template-parts/*.php'];
 
 gulp.task('js', function() {
 	gulp.src(jsSources)
 		.pipe(concat('main.js'))
 		.pipe(browserify())
-		.pipe(gulp.dest('_development/js'));
+		.pipe(gulp.dest(outputDir + 'js'));
 		.pipe(livereload());
 });
 
@@ -26,10 +44,10 @@ gulp.task('compass', function() {
 		.pipe(compass({
 			sass: '_components/sass',
 			image: 'images',
-			style: 'expanded'
+			style: sassStyle
 		}))
 		.on('error', gutil.log)
-		.pipe(gulp.dest('_development/css'))
+		.pipe(gulp.dest(outputDir + 'css'))
 		.pipe(livereload());
 });
 
