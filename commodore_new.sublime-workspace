@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"sass",
+				"sassStyle"
+			],
+			[
+				"_",
+				"_development"
+			],
+			[
+				"de",
+				"_development"
+			],
+			[
+				"php",
+				"phpSources"
+			],
+			[
+				"html",
+				"htmlSources"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"p",
+				"pipe"
+			],
+			[
 				"pa",
 				"padding-left"
 			],
@@ -126,18 +154,37 @@
 	"expanded_folders":
 	[
 		"/Users/PacWeb/htdocs/Commodore-new",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/sass",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/sass/layout"
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components/js",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components/sass",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components/sass/layout",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components/sass/mixins",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components/sass/site",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_development"
 	],
 	"file_history":
 	[
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/page-home.php",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/page-event.php",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/footer.php",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/functions.php",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components/js/main.js",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components/sass/mixins/_mixins-master.scss",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/header.php",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/gulpfile.js",
+		"/Users/PacWeb/htdocs/Commodore-new/wp-includes/theme.php",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/package.json",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components/sass/style.scss",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components/sass/base/_variables.scss",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components/sass/base/_base.scss",
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components/sass/variables-site/_variables-site.scss",
+		"/Users/PacWeb/htdocs/Commodore-new/.gitignore",
 		"/Users/PacWeb/htdocs/Commodore-new/_notes/Git notes.txt",
 		"/Users/PacWeb/htdocs/Commodore-new/README.md",
-		"/Users/PacWeb/htdocs/Commodore-new/.gitignore",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/sass/layout/_no-sidebar.scss",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/page-event.php",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/page-home.php",
 		"/Users/PacWeb/htdocs/Commodore-new/_notes/_htaccess/htaccess-backup",
 		"/Users/PacWeb/htdocs/Commodore-new/.htaccess",
 		"/Users/PacWeb/htdocs/Commodore-new/_notes/_htaccess/.htaccess",
@@ -149,12 +196,10 @@
 		"/Users/PacWeb/htdocs/Vmade-SF-2/site-content/themes/vmadesf/single-agents.php",
 		"/Users/PacWeb/htdocs/Vmade-SF-2/site-content/themes/vmadesf/page_commercial.php",
 		"/Users/PacWeb/htdocs/Vmade-SF-2/site-content/themes/vmadesf/page_agents.php",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/header.php",
 		"/Users/PacWeb/htdocs/Commodore-new/_notes/_for dev site/wp-config.php",
 		"/Users/PacWeb/htdocs/Commodore-new/_notes/_for dev site/wp-settings.php",
 		"/Users/PacWeb/htdocs/Commodore-new/_notes/_for dev site/functions.php",
 		"/Users/PacWeb/htdocs/Commodore-new/_notes/for dev site/functions.php",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/functions.php",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/js/flexibility.js",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/sass/media/_captions.scss",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/sass/site/primary/_header.scss",
@@ -174,12 +219,9 @@
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_c_e/functions.php",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/inc/custom-header.php",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/inc/customizer.php",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/footer.php",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_c_e/footer.php",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_c_e/header.php",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components/js/main.js",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/_components/js/script.js",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises_events/package.json",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_c_e/sass/style.scss",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_c_e/sass/site/primary/_footer.scss",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_c_e/sass/site/primary/_header.scss",
@@ -252,14 +294,7 @@
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_c_e/package.json",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_c_e/config.rb",
 		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises/sass/navigation/_menus.scss",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises/header.php",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises/sass/variables-site/_grids.scss",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises/sass/typography/_headings.scss",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises/sass/variables-site/_typography.scss",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises/config.rb",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises/sass/typography/_typography.scss",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises/page-templates/home-page.php",
-		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises/sass/layout/_no-sidebar.scss"
+		"/Users/PacWeb/htdocs/Commodore-new/site-content/themes/commodore_cruises/header.php"
 	],
 	"find":
 	{
@@ -288,6 +323,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"stylesheet",
+			"_development/",
 			"events",
 			"modernizr",
 			"html",
