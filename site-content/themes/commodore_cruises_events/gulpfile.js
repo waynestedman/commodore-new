@@ -1,8 +1,10 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
-    browserify = require('gulp-browserify'),
+    // browserify = require('gulp-browserify'),
     compass = require('gulp-compass'),
     livereload = require('gulp-livereload'),
+    gulpif = require('gulp-if'),
+    uglify = require('gulp-uglify'),
     concat = require('gulp-concat');
 
 var env,
@@ -34,8 +36,9 @@ phpSources = ['*.php', 'template-parts/*.php'];
 gulp.task('js', function() {
 	gulp.src(jsSources)
 		.pipe(concat('main.js'))
-		.pipe(browserify())
-		.pipe(gulp.dest(outputDir + 'js'));
+		// .pipe(browserify())
+		.pipe(gulpif(env === 'production', uglify()))
+		.pipe(gulp.dest(outputDir + 'js'))
 		.pipe(livereload());
 });
 
@@ -55,7 +58,7 @@ gulp.task('watch', function() {
   livereload.listen();
   gulp.watch(jsSources, ['js']);
   gulp.watch('_components/sass/*.scss', ['compass']);
-  gulp.watch(htmlSources, ['html']);
+  gulp.watch(htmlSources, ['html'])
   gulp.watch(phpSources, ['php']);
 });
 
