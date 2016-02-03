@@ -43,7 +43,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('compass', function() {
-	gulp.src(sassSources)
+	gulp.src('_components/sass/*')
 		.pipe(compass({
 			sass: '_components/sass',
 			image: 'images',

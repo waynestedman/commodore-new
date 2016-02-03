@@ -132,7 +132,9 @@ function commodore_cruises_events_scripts() {
 	wp_enqueue_script( 'commodore_cruises_events-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
    wp_enqueue_script( 'commodore_cruises_events-flexibility', get_template_directory_uri() . '/js/flexibility.js', array( 'jquery' ), '', true );
-
+// Radley and Noto Sans fonts from Google
+   wp_enqueue_style( 'commodore_cruises_events-google-fonts', 'https://fonts.googleapis.com/css?family=Radley:400,400italic|Noto+Sans:400,400italic,700' );
+  		
 // Colorbox jQuery plugin js file
    wp_enqueue_script( 'commodore_cruises_events-colorbox', get_template_directory_uri() . '/colorbox/jquery.colorbox-min.js', array( 'jquery' ), '', true );
       
