@@ -46,13 +46,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 /*--------- # General setup ---------*/
 
-@import "compass";
-@import "compass/reset";
 @import "bourbon/bourbon";
 @import "base/grid-settings";
 @import "neat/neat";
 @import "base/base";
-@import "variables-site/variables-site";
+@import "base/variables";
 @import "mixins/mixins-master";
 
 /*--------------------------------------------------------------

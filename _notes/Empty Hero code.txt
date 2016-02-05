@@ -1,0 +1,45 @@
+Empty Hero code
+
+HTML:
+
+<div class="hero">
+  <div class="hero-content">
+    <img src="https://raw.githubusercontent.com/thoughtbot/empties/master/source/images/placeholder.png" alt="Logo Image" class="hero-logo">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni modi doloremque excepturi laudantium maxime explicabo cumque deleniti voluptate deserunt.</p>
+  </div>
+</div>
+
+
+
+SCSS:
+
+.hero {
+  $large-screen: 50em !default;
+  align-items: center;
+  background: image_url("background-image.png");
+  background-position: right;
+  background-size: none;
+  display: flex;
+  justify-content: center;
+  min-height: 25em;
+  padding: 2em;
+
+  @include media($large-screen) {
+    background-size: cover;
+    background-position: left;
+    justify-content: flex-end;
+  }
+
+  .hero-content {
+    max-width: 20em;
+    text-align: center;
+
+    @include media($large-screen) {
+      text-align: left;
+    }
+  }
+
+  .hero-logo {
+    margin: auto;
+  }
+}
