@@ -32,44 +32,12 @@ p {
   margin: 0 0 $small-spacing;
 }
 
-a {
-  color: $action-color;
-  text-decoration: none;
-  transition: color $base-duration $base-timing;
-
-  &:active,
-  &:focus,
-  &:hover {
-    color: shade($action-color, 25%);
-  }
-
-  &:focus {
-    outline: thin dotted;
-  }
-
-  &:hover,
-  &:active {
-    outline: 0;
-  }
-
-  &:visited {
-    color: $color__link-visited;
-  }
-}
-
 hr {
   border-bottom: $base-border;
   border-left: 0;
   border-right: 0;
   border-top: 0;
   margin: $base-spacing 0;
-}
-
-img,
-picture {
-  margin: 0;
-  height: auto; /* Make sure images are scaled correctly. */
-  max-width: 100%;
 }
 
 /* --- Heading related -------------------------- */

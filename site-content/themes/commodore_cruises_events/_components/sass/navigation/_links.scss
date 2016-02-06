@@ -1,19 +1,24 @@
 a {
-	color: $color__link;
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
 
-	&:visited {
-		color: $color__link-visited;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+
+  &:focus {
+    outline: thin dotted;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+
+  &:visited {
+    color: $color__link-visited;
+  }
 }
