@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     // browserify = require('gulp-browserify'),
-    styles = require('gulp-sass'),
+    compass = require('gulp-compass'),
     livereload = require('gulp-livereload'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
@@ -42,9 +42,9 @@ gulp.task('js', function() {
 		.pipe(livereload());
 });
 
-gulp.task('styles', function() {
+gulp.task('compass', function() {
 	gulp.src('_components/sass/*')
-		.pipe(styles({
+		.pipe(compass({
 			sass: '_components/sass',
 			image: 'images',
 			style: sassStyle
@@ -57,7 +57,7 @@ gulp.task('styles', function() {
 gulp.task('watch', function() {
   livereload.listen();
   gulp.watch(jsSources, ['js']);
-  gulp.watch('_components/sass/**/*.scss', ['styles']);
+  gulp.watch('_components/sass/**/*.scss', ['compass']);
   gulp.watch(htmlSources, ['html'])
   gulp.watch(phpSources, ['php']);
 });
@@ -72,4 +72,4 @@ gulp.task('php', function() {
 		.pipe(livereload());
 });
 
-gulp.task('default', ['php', 'html', 'js', 'styles', 'watch']);
+gulp.task('default', ['php', 'html', 'js', 'compass', 'watch']);
