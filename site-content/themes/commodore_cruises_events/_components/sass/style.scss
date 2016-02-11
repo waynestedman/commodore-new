@@ -25,6 +25,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 ----------------------------------------------------------------
 # Bourbon
 # Normalize
+# Base Variables
 # Mixins
 # Base (Bitters) and Neat
 # Navigation
@@ -51,6 +52,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 /*--------- # Normalize ---------*/
 @import "normalize";
+
+/*--------- # Base Variables ---------*/
+@import "base/variables";
 
 /*--------- # Mixins ---------*/
 @import "mixins/mixins-master";
