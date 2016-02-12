@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     // browserify = require('gulp-browserify'),
-    styles = require('gulp-sass'),
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
     livereload = require('gulp-livereload'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
@@ -17,8 +18,8 @@ var env,
 
 env = process.env.NODE_ENV || 'development';
 
-if (env==='development') {
-	outputDir = '_development/', '/';
+if (env === 'development') {
+	outputDir = '_development/';
 	sassStyle = 'expanded';
 } else {
 	outputDir = '/';
@@ -43,14 +44,19 @@ gulp.task('js', function() {
 });
 
 gulp.task('styles', function() {
-	gulp.src('_components/sass/*')
-		.pipe(styles({
-			sass: '_components/sass',
-			image: 'images',
-			style: sassStyle
+	gulp.src('_components/sass/**/*')
+		.pipe(sass({outputStyle: 'expanded'})
+		.pipe(sass().on('error', sass.logError)
+		.pipe(gulp.dest(outputDir + 'css'));
+});
+
+gulp.task('prefix', function () {
+	gulp.src(outputDir + 'css' + '/style.css')
+		.pipe(autoprefixer({
+			browsers: ['last 2 versions'],
+			cascade: false
 		}))
-		.on('error', gutil.log)
-		.pipe(gulp.dest(outputDir + 'css'))
+		.pipe(gulp.dest('css/style.css'))
 		.pipe(livereload());
 });
 
@@ -72,4 +78,4 @@ gulp.task('php', function() {
 		.pipe(livereload());
 });
 
-gulp.task('default', ['php', 'html', 'js', 'styles', 'watch']);
+gulp.task('default', ['php', 'html', 'js', 'styles', 'prefix', 'watch']);
