@@ -1,12 +1,14 @@
-var gulp = require('gulp'),
-    gutil = require('gulp-util'),
-    // browserify = require('gulp-browserify'),
-    sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    livereload = require('gulp-livereload'),
-    gulpif = require('gulp-if'),
-    uglify = require('gulp-uglify'),
-    concat = require('gulp-concat');
+var postcss = require('gulp-postcss'), 
+	gulp = require('gulp'),
+   gutil = require('gulp-util'),
+   // browserify = require('gulp-browserify'),
+   compass = require('gulp-compass'),
+   livereload = require('gulp-livereload'),
+   gulpif = require('gulp-if'),
+   autoprefixer = require('gulp-autoprefixer'),
+   sourcemaps = require('gulp-sourcemaps'),
+   uglify = require('gulp-uglify'),
+   concat = require('gulp-concat');
 
 var env,
 	jsSources,
@@ -18,7 +20,7 @@ var env,
 
 env = process.env.NODE_ENV || 'development';
 
-if (env === 'development') {
+if (env==='development') {
 	outputDir = '_development/';
 	sassStyle = 'expanded';
 } else {
@@ -43,29 +45,25 @@ gulp.task('js', function() {
 		.pipe(livereload());
 });
 
-gulp.task('styles', function() {
-	gulp.src('_components/sass/**/*')
-		.pipe(sass({outputStyle: 'expanded'})
-		.pipe(sass().on('error', sass.logError)
-		.pipe(gulp.dest(outputDir + 'css'));
-});
-
-gulp.task('prefix', function () {
-	gulp.src(outputDir + 'css' + '/style.css')
-		.pipe(autoprefixer({
-			browsers: ['last 2 versions'],
-			cascade: false
+gulp.task('compass', function() {
+	gulp.src('_components/sass/*')
+		.pipe(compass({
+			sass: '_components/sass',
+			image: 'images',
+			style: sassStyle
 		}))
-		.pipe(gulp.dest('css/style.css'))
-		.pipe(livereload());
+		.on('error', gutil.log)
+		.pipe(gulp.dest(outputDir + 'css'))
+
 });
 
 gulp.task('watch', function() {
   livereload.listen();
   gulp.watch(jsSources, ['js']);
-  gulp.watch('_components/sass/**/*.scss', ['styles']);
+  gulp.watch('_components/sass/**/*.scss', ['compass']);
   gulp.watch(htmlSources, ['html'])
-  gulp.watch(phpSources, ['php']);
+  gulp.watch(phpSources, ['php'])
+  gulp.watch((outputDir + 'css/style.css'), ['prefix']);
 });
 
 gulp.task('html', function() {
@@ -78,4 +76,15 @@ gulp.task('php', function() {
 		.pipe(livereload());
 });
 
-gulp.task('default', ['php', 'html', 'js', 'styles', 'prefix', 'watch']);
+gulp.task('prefix', function () {
+	gulp.src('_development/css/style.css')
+		.pipe(sourcemaps.init())
+		.pipe(autoprefixer({
+			browsers: ['> 1%', 'last 3 versions', 'ie 8'],
+			cascade: false
+		}))
+		.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest('css'))
+		.pipe(livereload());
+});
+gulp.task('default', ['php', 'html', 'js', 'compass', 'prefix', 'watch']);
