@@ -298,6 +298,14 @@ th {
 }
 
 /*--------- # Base (Bitters) and Neat ---------*/
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
   background-color: #3e85c6;
@@ -523,37 +531,129 @@ hr {
   margin: 1.5rem 0;
 }
 
-/* --- Heading related -------------------------- 
-h1 {
-  font-size: $base-font-size + 24px;
-  line-height: $base-line-height + 24px;
+/* --- Traditional type system - from Refills -------------------------- */
+article.type-system-traditional {
+  content: "";
+  display: table;
+  font-family: "Noto Sans", sans-serif;
+  text-align: left;
+}
+article.type-system-traditional h1, article.type-system-traditional h2, article.type-system-traditional h3, article.type-system-traditional p {
+  margin: 0;
+}
+article.type-system-traditional hr {
+  border-bottom: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5rem 0;
+}
+article.type-system-traditional p {
+  color: #333;
+  line-height: 1.5;
+}
+article.type-system-traditional a {
+  color: #3e85c6;
+  text-decoration: none;
+}
+article.type-system-traditional .type {
+  border-bottom: 2px solid;
+  display: inline-block;
+  font-family: "Noto Sans", sans-serif;
+  font-size: .7rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  padding: .1em 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+article.type-system-traditional h1 {
+  font-family: "Radley", serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+@media screen and (min-width: 600px) {
+  article.type-system-traditional h1 {
+    font-size: 2.6rem;
+  }
+}
+article.type-system-traditional h2 {
+  font-family: "Radley", serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-bottom: .9em;
+}
+@media screen and (min-width: 600px) {
+  article.type-system-traditional h2 {
+    font-size: 1.5rem;
+  }
+}
+article.type-system-traditional code {
+  background: #F7F7F7;
+  border-radius: 4.5px;
+  border: 1px solid #E0E0E0;
+  font-size: 0.75rem;
+  font-style: normal;
+  padding: 0.1rem 0.4rem;
+  white-space: nowrap;
+}
+article.type-system-traditional h2 code {
+  font-size: 0.65rem;
+}
+article.type-system-traditional h3 {
+  font-family: "Radley", serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+article.type-system-traditional p.date {
+  color: rgba(51, 51, 51, 0.4);
+  font-family: "Radley", serif;
+  font-style: italic;
+  margin-bottom: .3rem;
+}
+article.type-system-traditional p {
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 1;
+  line-height: 1.55rem;
+  margin-bottom: 1.5rem;
+}
+article.type-system-traditional p span {
+  font-family: "Radley", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+article.type-system-traditional a.read-more {
+  display: inline-block;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-left: 0.2rem;
+  position: relative;
+  text-transform: uppercase;
+}
+article.type-system-traditional a.read-more span {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  position: absolute;
+  right: -12px;
+  top: -1px;
+}
+article.type-system-traditional hr {
+  width: 3rem;
+}
+article.type-system-traditional p.author {
+  font-family: "Radley", serif;
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
-h2 {
-  font-size: $base-font-size + 20px;
-  line-height: $base-line-height + 20px;
-}
-
-h3 {
-  font-size: $base-font-size + 16px;
-  line-height: $base-line-height + 16px;
-}
-
-h4 {
-  font-size: $base-font-size + 12px;
-  line-height: $base-line-height + 12px;
-}
-
-h5 {
-  font-size: $base-font-size + 8px;
-  line-height: $base-line-height + 8px;
-}
-
-h6 {
-  font-size: ($base-font-size + 4px);
-  line-height: ($base-line-height + 4px);
-}  */
-/* --- Copy related -------------------------- */
+/* --- Copy related -------------------------- 
 p {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
@@ -565,55 +665,45 @@ dfn, cite, em, i {
 
 blockquote {
   margin: 0 24px;
-  margin: 0 1.5em;
+  margin: 0 1.5rem;
 }
 
 address {
   margin: 0 0 24px;
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
 }
 
 pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.6rem;
+  background: $color__background-pre;
+  font-family: $font__pre;
+  @include font-size(0.9375);
+  line-height: $font__line-height-pre;
   margin-bottom: 26px;
   margin-bottom: 1.625rem;
   max-width: 100%;
   overflow: auto;
-  padding: 1.6em;
+  padding: 1.6rem;
 }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-family: $font__code;
+  @include font-size(0.9375);
 }
 
 abbr, acronym {
-  border-bottom: 1px dotted #666;
+  border-bottom: 1px dotted $color__border-abbr;
   cursor: help;
 }
 
 mark, ins {
-  background: #fff9c0;
+  background: $color__background-ins;
   text-decoration: none;
 }
 
 big {
   font-size: 125%;
 }
-
-html {
-  box-sizing: border-box;
-}
-
-*, *::after, *::before {
-  box-sizing: inherit;
-}
-
+*/
 /*--------- # Navigation ---------*/
 /*--------------------------------------------------------------
 ## Links
@@ -669,6 +759,7 @@ a:visited {
   display: block;
   float: left;
   width: 100%;
+  margin-top: -34px;
 }
 .main-navigation ul {
   display: none;
@@ -677,7 +768,7 @@ a:visited {
   padding-left: 0;
 }
 .main-navigation ul li {
-  border: 1px solid #010304;
+  border: 1px solid #2b5d8b;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   margin-right: 16px;
   margin-right: 1rem;
@@ -694,7 +785,7 @@ a:visited {
 }
 .main-navigation ul ul {
   background: rgba(0, 179, 234, 0.9);
-  border: 1px solid #010304;
+  border: 1px solid #2b5d8b;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
@@ -703,10 +794,11 @@ a:visited {
   left: -15984px;
   left: -999rem;
   z-index: 99999;
+  margin-left: -1px;
 }
 .main-navigation ul ul ul {
   background: rgba(62, 133, 198, 0.9);
-  border: 1px solid #010304;
+  border: 1px solid #2b5d8b;
   left: -15984px;
   left: -999rem;
   top: -1px;
@@ -714,7 +806,7 @@ a:visited {
 .main-navigation ul ul ul li {
   margin: 0;
   border: none;
-  border-bottom: 1px solid #24517a;
+  border-bottom: 1px solid #326a9e;
 }
 .main-navigation ul ul ul li:nth-child(odd), .main-navigation ul ul ul li:nth-child(even) {
   background: #3e85c6;
@@ -722,7 +814,7 @@ a:visited {
 .main-navigation ul ul li {
   margin: 0;
   border: none;
-  border-bottom: 1px solid #006584;
+  border-bottom: 1px solid #008fbb;
 }
 .main-navigation ul ul li:nth-child(odd), .main-navigation ul ul li:nth-child(even) {
   background: #00b3ea;
@@ -908,11 +1000,12 @@ a:visited {
   display: block;
   width: 100%;
   height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
   float: left;
-  margin: 10px;
 }
 
 /*--------------------------------------------------------------

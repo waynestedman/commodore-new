@@ -60,8 +60,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "mixins/mixins-master";
 
 /*--------- # Base (Bitters) and Neat ---------*/
-@import "base/base";
 @import "neat/neat";
+@import "base/base";
 
 /*--------- # Navigation ---------*/
 @import "navigation/navigation";
