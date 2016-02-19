@@ -125,7 +125,7 @@ add_action( 'widgets_init', 'commodore_cruises_events_widgets_init' );
 function commodore_cruises_events_scripts() {
 	wp_enqueue_style( 'colorbox', get_template_directory_uri() . '/colorbox/colorbox.css' );
 
-	wp_enqueue_style( 'commodore_cruises_events-style', get_template_directory_uri() . '/css/style.css' );
+	wp_enqueue_style( 'commodore_cruises_events-style', get_template_directory_uri() . '/style.css' );
 
 	wp_enqueue_script( 'commodore_cruises_events-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

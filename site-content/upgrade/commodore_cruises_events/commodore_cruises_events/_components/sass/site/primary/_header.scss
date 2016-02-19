@@ -1,0 +1,24 @@
+.site-header {
+	background: #158F6C;
+} 
+
+.site-branding {
+	//height: 334px;
+	margin: 0 auto;
+	padding: 0;
+	//background: url("images/SF-skyline.jpg") no-repeat;
+
+	img {
+		display: block;
+   	width: 100%;
+   	height: auto;
+   	margin: 0;
+   	padding: 0;
+		//float: none;
+	}
+}
+
+.logo {
+	float: left;
+	// margin: 10px;
+}

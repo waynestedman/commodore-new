@@ -24,7 +24,7 @@ if (env==='development') {
 	outputDir = '_development/';
 	sassStyle = 'expanded';
 } else {
-	outputDir = '/';
+	outputDir = '';
 	sassStyle = 'compressed';
 }
 
@@ -48,6 +48,7 @@ gulp.task('js', function() {
 gulp.task('compass', function() {
 	gulp.src('_components/sass/*')
 		.pipe(compass({
+			css: '_development/css',
 			sass: '_components/sass',
 			image: 'images',
 			style: sassStyle
@@ -63,7 +64,7 @@ gulp.task('watch', function() {
   gulp.watch('_components/sass/**/*.scss', ['compass']);
   gulp.watch(htmlSources, ['html'])
   gulp.watch(phpSources, ['php'])
-  gulp.watch((outputDir + 'css/style.css'), ['prefix']);
+  gulp.watch(('_development/css/style.css'), ['prefix']);
 });
 
 gulp.task('html', function() {
@@ -84,7 +85,7 @@ gulp.task('prefix', function () {
 			cascade: false
 		}))
 		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('css'))
+		.pipe(gulp.dest('.'))
 		.pipe(livereload());
 });
 gulp.task('default', ['php', 'html', 'js', 'compass', 'prefix', 'watch']);

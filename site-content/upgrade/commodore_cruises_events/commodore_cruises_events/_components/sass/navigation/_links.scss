@@ -1,0 +1,24 @@
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+
+  &:focus {
+    outline: thin dotted;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+
+  &:visited {
+    color: $color__link-visited;
+  }
+}
