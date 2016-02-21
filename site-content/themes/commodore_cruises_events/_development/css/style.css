@@ -45,6 +45,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+	## Cards
 --------------------------------------------------------------*/
 /*--------- # Bourbon ---------*/
 /*--------- # Normalize ---------*/
@@ -1311,4 +1312,68 @@ picture {
 
 .gallery-caption {
   display: block;
+}
+
+/*--------------------------------------------------------------
+## Cards
+--------------------------------------------------------------*/
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex-basis: 15rem;
+  flex-grow: 1;
+  transition: all, 0.2s, ease-in-out;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px #e6e6e6;
+  cursor: pointer;
+  margin: 0 1rem 1.5rem 1rem;
+  position: relative;
+}
+.card .card-image {
+  overflow: hidden;
+  height: 150px;
+  max-height: 150px;
+  background-color: #F8F2B4;
+}
+.card .card-image img {
+  transition: all, 0.2s, ease-in-out;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  width: 100%;
+  opacity: 1;
+}
+.card .card-header {
+  transition: all, 0.2s, ease-in-out;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+  line-height: 1.5rem;
+  padding: 0.5rem 0.75rem;
+}
+.card .card-copy {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  padding: 0.75rem 0.75rem;
+}
+.card .card-copy p {
+  margin: 0 0 0.75rem;
+}
+.card:focus, .card:hover {
+  cursor: pointer;
+}
+.card:focus img, .card:hover img {
+  opacity: 0.7;
+}
+.card:active {
+  background-color: #f7f7f7;
+}
+.card:active .card-header {
+  background-color: #f7f7f7;
 }
