@@ -17,24 +17,33 @@ get_header(); ?>
 					<?php endwhile; // end of the loop. ?>
 				</article> 
 				<div class="cards">
-
+					<div class="card">
 					<?php 
-						$args = array(
-							'posts_per_page' => 5,
-							'offset' => 0,
+						$posts = get_posts(array(
+							//'posts_per_page' => 5,
+							//'offset' => 0,
+							//'numberposts' => -1,
+							'category_name' => 'executive',
 							'orderby' => 'ID',		
 							'post_type' => 'post',
-							'post_parent' => 'executive',
 							'post_status' => 'publish'
-						);
-						$posts_array = get_posts( $args );
+					));
 
-						while ( have_posts() ) : the_post(); ?>
-							<h3><?php the_field('name'); ?></h3>
-							<h4><?php the_field('title'); ?></h4>
-	<!-- 						<img src="<?php the_field('hero_image'); ?>" />  -->										<p><?php the_content(); ?></p>
-						<?php endwhile; // end of the loop. ?>
-
+					if($posts)
+					{ 
+						foreach ($posts as $post) {
+			    			echo '<div class="card-image">';
+		      			echo '<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">';
+			    			echo '</div>';
+							echo	'<div class="card-header">';
+							echo	'<h3>' .  the_field('name') . '</h3>';
+							echo	'<h3>' .  the_field('title') . '</h3>';
+							// echo '<p>' . the_content($post) . '</p>';
+							echo '</div>';
+						}
+					}
+					?>
+					
 	 				<div class="card">
 		    			<div class="card-image">
 		      			<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
