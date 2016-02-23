@@ -29,15 +29,17 @@ get_header(); ?>
 					{ 
 						foreach ($posts as $post) {
 							echo '<div class="card">';
-			    			echo '<div class="card-image">';
+			    			echo '<div class="staff-card-image">';
 		      			echo '<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">';
 			    			echo '</div>';
-							echo	'<div class="card-header">';
-							echo	'<h3>' .  the_field('name') . '</h3>';
-							echo	'<p>' .  the_field('title') . '</p>';
+							echo	'<div class="staff-card-header">';
+							echo	the_field('name');
 							echo '</div>';
-							echo '<div class="card-copy">';
-							echo '<p>' . the_field('description') . '</p>';
+							echo	'<div class="staff-card-title">';
+							echo	the_field('title');
+							echo '</div>';
+							echo '<div class="staff-card-copy">';
+							echo the_field('description');
 							echo '</div>';
 							echo '</div>';
 						}
@@ -59,21 +61,23 @@ get_header(); ?>
 					{ 
 						foreach ($posts as $post) {
 							echo '<div class="card">';
-			    			echo '<div class="card-image">';
+			    			echo '<div class="staff-card-image">';
 		      			echo '<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">';
 			    			echo '</div>';
-							echo	'<div class="card-header">';
-							echo	'<h3>' .  the_field('name') . '</h3>';
-							echo	'<p>' .  the_field('title') . '</p>';
+							echo	'<div class="staff-card-header">';
+							echo	the_field('name');
 							echo '</div>';
-							echo '<div class="card-copy">';
-							echo '<p>' . the_field('description') . '</p>';
+							echo	'<div class="staff-card-title">';
+							echo	the_field('title');
+							echo '</div>';
+							echo '<div class="staff-card-copy">';
+							echo the_field('description');
 							echo '</div>';
 							echo '</div>';
 						}
 					}
 					?>
-				</div> <!-- cards -->
+				</div> <!-- Staff cards -->
 			</main><!-- #main -->
 		</section> <!-- section -->	
 	</div> <!-- #primary -->

@@ -32,7 +32,7 @@
   position: relative;
 
 
-  .card-image {
+  .staff-card-image {
     overflow: hidden;
     height: 150px;
     max-height: 150px;
@@ -47,24 +47,36 @@
     }
   }
 
-  .card-header {
+  .staff-card-header {
     transition: all, 0.2s, ease-in-out;
     background-color: $card-header-background;
-    border-bottom: $card-border;
+    // border-bottom: $card-border;
     border-radius: $base-border-radius $base-border-radius 0 0;
-    font-weight: bold;
+    font-family: $serif;
+    font-size: 1.3rem;
+    font-weight: 700;
     line-height: 1.5rem;
     padding: ($base-spacing / 3) ($base-spacing / 2);
   }
 
-  .card-copy {
+  .staff-card-title {
+      transition: all, 0.2s, ease-in-out;
+      background-color: $card-header-background;
+      border-bottom: $card-border;
+      border-radius: $base-border-radius $base-border-radius 0 0;
+      font-family: $serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1rem;
+      padding: ($base-spacing / 3) ($base-spacing / 2);
+  }
+
+  .staff-card-copy {
     font-size: 0.9rem;
     line-height: 1.5rem;
     padding: ($base-spacing / 2) ($base-spacing / 2);
-
-    p {
-      margin: 0 0 ($base-spacing / 2);
-    }
+    margin: 0 0 ($base-spacing / 2);
   }
 
   &:focus,

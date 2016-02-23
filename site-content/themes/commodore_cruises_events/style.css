@@ -560,31 +560,29 @@ hr {
 }
 
 /* --- Traditional type system - from Refills -------------------------- */
-article.type-system-traditional {
-  content: "";
-  display: table;
-  font-family: "Noto Sans", sans-serif;
-  text-align: left;
-}
-article.type-system-traditional h1, article.type-system-traditional h2, article.type-system-traditional h3, article.type-system-traditional p {
+h1, h2, h3, p {
   margin: 0;
 }
-article.type-system-traditional hr {
+
+hr {
   border-bottom: 1px solid #ddd;
   border-left: none;
   border-right: none;
   border-top: none;
   margin: 1.5rem 0;
 }
-article.type-system-traditional p {
+
+p {
   color: #333;
   line-height: 1.5;
 }
-article.type-system-traditional a {
+
+a {
   color: #3e85c6;
   text-decoration: none;
 }
-article.type-system-traditional .type {
+
+.type {
   border-bottom: 2px solid;
   display: inline-block;
   font-family: "Noto Sans", sans-serif;
@@ -595,18 +593,20 @@ article.type-system-traditional .type {
   text-align: left;
   text-transform: uppercase;
 }
-article.type-system-traditional h1 {
+
+h1 {
   font-family: "Radley", serif;
   font-size: 1.9rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
 }
 @media screen and (min-width: 600px) {
-  article.type-system-traditional h1 {
+  h1 {
     font-size: 2.6rem;
   }
 }
-article.type-system-traditional h2 {
+
+h2 {
   font-family: "Radley", serif;
   font-size: 1.3rem;
   font-weight: 400;
@@ -614,11 +614,12 @@ article.type-system-traditional h2 {
   margin-bottom: .9em;
 }
 @media screen and (min-width: 600px) {
-  article.type-system-traditional h2 {
+  h2 {
     font-size: 1.5rem;
   }
 }
-article.type-system-traditional code {
+
+code {
   background: #F7F7F7;
   border-radius: 4.5px;
   border: 1px solid #E0E0E0;
@@ -627,10 +628,12 @@ article.type-system-traditional code {
   padding: 0.1rem 0.4rem;
   white-space: nowrap;
 }
-article.type-system-traditional h2 code {
+
+h2 code {
   font-size: 0.65rem;
 }
-article.type-system-traditional h3 {
+
+h3 {
   font-family: "Radley", serif;
   font-size: 1.4rem;
   font-style: italic;
@@ -638,24 +641,27 @@ article.type-system-traditional h3 {
   line-height: 1.3rem;
   margin-bottom: 0.4rem;
 }
-article.type-system-traditional p.date {
+
+p.date {
   color: rgba(51, 51, 51, 0.4);
   font-family: "Radley", serif;
   font-style: italic;
   margin-bottom: .3rem;
 }
-article.type-system-traditional p {
+
+p {
   font-family: "Noto Sans", sans-serif;
   letter-spacing: 1;
   line-height: 1.55rem;
   margin-bottom: 1.5rem;
 }
-article.type-system-traditional p span {
+p span {
   font-family: "Radley", serif;
   font-size: 1.2rem;
   font-style: italic;
 }
-article.type-system-traditional a.read-more {
+
+a.read-more {
   display: inline-block;
   font-family: "Noto Sans", sans-serif;
   font-size: 0.8rem;
@@ -664,7 +670,7 @@ article.type-system-traditional a.read-more {
   position: relative;
   text-transform: uppercase;
 }
-article.type-system-traditional a.read-more span {
+a.read-more span {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
   font-style: normal;
@@ -672,10 +678,12 @@ article.type-system-traditional a.read-more span {
   right: -12px;
   top: -1px;
 }
-article.type-system-traditional hr {
+
+hr {
   width: 3rem;
 }
-article.type-system-traditional p.author {
+
+p.author {
   font-family: "Radley", serif;
   font-size: 1.2rem;
   font-style: italic;
@@ -1254,6 +1262,9 @@ a:visited {
   text-align: center;
   color: #3270a9;
 }
+.site-info p {
+  color: #ccc;
+}
 .site-info a {
   color: #3270a9;
 }
@@ -1396,13 +1407,13 @@ picture {
   margin: 0 1rem 1.5rem 1rem;
   position: relative;
 }
-.card .card-image {
+.card .staff-card-image {
   overflow: hidden;
   height: 150px;
   max-height: 150px;
   background-color: #F8F2B4;
 }
-.card .card-image img {
+.card .staff-card-image img {
   -webkit-transition: all, 0.2s, ease-in-out;
   transition: all, 0.2s, ease-in-out;
   border-top-left-radius: 3px;
@@ -1410,22 +1421,34 @@ picture {
   width: 100%;
   opacity: 1;
 }
-.card .card-header {
+.card .staff-card-header {
+  -webkit-transition: all, 0.2s, ease-in-out;
+  transition: all, 0.2s, ease-in-out;
+  background-color: #f7f7f7;
+  border-radius: 3px 3px 0 0;
+  font-family: "Radley", serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  padding: 0.5rem 0.75rem;
+}
+.card .staff-card-title {
   -webkit-transition: all, 0.2s, ease-in-out;
   transition: all, 0.2s, ease-in-out;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ddd;
   border-radius: 3px 3px 0 0;
-  font-weight: bold;
-  line-height: 1.5rem;
+  font-family: "Radley", serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1rem;
   padding: 0.5rem 0.75rem;
 }
-.card .card-copy {
+.card .staff-card-copy {
   font-size: 0.9rem;
   line-height: 1.5rem;
   padding: 0.75rem 0.75rem;
-}
-.card .card-copy p {
   margin: 0 0 0.75rem;
 }
 .card:focus, .card:hover {

@@ -45,12 +45,12 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<img
-         	src="images/SF-skyline-original.jpg"
+         	src="<?php echo get_template_directory_uri(); ?>/images/SF-skyline-original.jpg"
          	alt="San Francisco skyline day and night"
-         	srcset="images/SF-skyline-small.jpg 640w, 
-         		images/SF-skyline-medium.jpg 1080w,
-               images/SF-skyline-large.jpg 1440w,
-               images/SF-skyline-extralarge.jpg 1920w"
+         	srcset="<?php echo get_template_directory_uri(); ?>/images/SF-skyline-small.jpg 640w, 
+         		<?php echo get_template_directory_uri(); ?>/images/SF-skyline-medium.jpg 1080w,
+               <?php echo get_template_directory_uri(); ?>/images/SF-skyline-large.jpg 1440w,
+               <?php echo get_template_directory_uri(); ?>/images/SF-skyline-extralarge.jpg 1920w"
       	>
       	 
 <!-- 			<nav class="event-nav">

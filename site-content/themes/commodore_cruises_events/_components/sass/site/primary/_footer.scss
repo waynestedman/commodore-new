@@ -53,6 +53,9 @@
 	text-align: center;
 	color: darken($comm-med-blue, 8%);
 
+	p {
+		color: #ccc;
+	}
 	a {
 		color: darken($comm-med-blue, 8%);
 	} // a
