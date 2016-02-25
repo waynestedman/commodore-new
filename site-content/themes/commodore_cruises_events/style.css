@@ -1464,4 +1464,41 @@ picture {
   background-color: #f7f7f7;
 }
 
+/*--------------------------------------------------------------
+## Expander
+--------------------------------------------------------------*/
+.expander {
+  width: 100%;
+}
+.expander .expander-trigger {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-bottom: 1px solid #ddd;
+  color: #3e85c6;
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem;
+  text-decoration: none;
+}
+.expander .expander-trigger:before {
+  font-size: 0.7rem;
+  content: "\25BC";
+  margin-right: 0.5rem;
+}
+.expander .expander-content p {
+  color: #333;
+  line-height: 1.5;
+}
+.expander .expander-hidden:before {
+  font-size: 0.7rem;
+  content: "\25BA";
+}
+.expander .expander-hidden + .expander-content {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
