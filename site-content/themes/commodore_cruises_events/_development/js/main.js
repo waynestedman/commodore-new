@@ -1,5 +1,3 @@
-$ = require 'jquery'
-
 (function($) {
 // Settings for the lightbox
 	var cbSettings = {
@@ -25,3 +23,10 @@ $ = require 'jquery'
 })(jQuery);
 
 // gallery-item.colorbox(); 
+
+// Expander section
+jQuery(function($) {
+  $('.expander-trigger').click(function(){
+    $(this).toggleClass("expander-hidden");
+  });
+});

@@ -40,8 +40,9 @@ gulp.task('js', function() {
 	gulp.src(jsSources)
 		.pipe(concat('main.js'))
 		// .pipe(browserify())
-		.pipe(gulpif(env === 'production', uglify()))
-		.pipe(gulp.dest(outputDir + 'js'))
+		.pipe(gulp.dest('_development/js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('js'))
 		.pipe(livereload());
 });
 
@@ -55,7 +56,6 @@ gulp.task('compass', function() {
 		}))
 		.on('error', gutil.log)
 		.pipe(gulp.dest(outputDir + 'css'))
-
 });
 
 gulp.task('watch', function() {
