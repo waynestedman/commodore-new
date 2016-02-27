@@ -528,6 +528,10 @@ th {
 }
 
 /* --- Imported, needed? ----- */
+html {
+  font-size: 16px;
+}
+
 body {
   color: #333;
   font-family: "Noto Sans", sans-serif;
@@ -1475,7 +1479,7 @@ picture {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ffcf8a;
   color: #3e85c6;
   cursor: pointer;
   display: block;
@@ -1492,6 +1496,8 @@ picture {
 .expander .expander-content p {
   color: #333;
   line-height: 1.5;
+  border-bottom: 1px solid #ffcf8a;
+  padding-bottom: 0.5rem;
 }
 .expander .expander-hidden:before {
   font-size: 0.7rem;

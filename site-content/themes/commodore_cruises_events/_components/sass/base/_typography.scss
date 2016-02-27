@@ -7,6 +7,9 @@
 //*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 //  box-sizing: inherit;
 //}
+html{
+  font-size: $em-base;
+}
 
 body {
   color: $base-font-color;

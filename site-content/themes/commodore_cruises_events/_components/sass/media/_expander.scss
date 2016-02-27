@@ -15,7 +15,8 @@
 
   .expander-trigger {
     @include user-select(none);
-    border-bottom: 1px solid $light-gray;
+    border-top: 1px solid $comm-gold;
+    //border-bottom: 1px solid $comm-gold;
     color: $action-color;
     cursor: pointer;
     display: block;
@@ -34,6 +35,8 @@
   .expander-content p {
     color: $base-font-color;
     line-height: $base-line-height;
+    border-bottom: 1px solid $comm-gold;
+    padding-bottom: 0.5rem;
   }
 
   .expander-hidden {

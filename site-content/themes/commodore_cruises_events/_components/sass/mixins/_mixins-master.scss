@@ -35,6 +35,6 @@
 	      //margin-right: 5px;
 	    } // event-type
    } // for
-    
 } // mixin
- @include colored-event-types(5,'a', lighten($comm-lt-blue, 10%) );
+
+@include colored-event-types(5,'a', lighten($comm-lt-blue, 10%) );

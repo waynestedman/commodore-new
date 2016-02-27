@@ -13,27 +13,22 @@ get_header(); ?>
 			<main id="main" class="info-main" role="main">
 				<article>
 				<div class="expander">
-					<a href="javascript:void(0)" class="expander-trigger expander-hidden">
-						<?php the_field('question'); ?>
-					</a>
-					<div class="expander-content"> 
-						<?php the_field('answer'); ?>
-					</div> <!-- expander-content -->
+					<?php if( have_rows('faq_entry') ): ?>
+						<?php while( have_rows('faq_entry') ): the_row(); 
+							// vars
+							$question = get_sub_field('question');
+							$answer = get_sub_field('answer');
+							$link = get_sub_field('page_link');
+							?>
+								<a href="javascript:void(0)" class="expander-trigger expander-hidden"> <?php echo $question; ?> </a>
+								<div class="expander-content"> 
+									<p><?php echo $answer; 
+									echo $link; ?></p>
+								</div> <!-- expander-content -->
+						<?php endwhile; ?>
+					<?php endif; ?>
 				</div> <!-- expander -->
-				<div class="expander">
-				  <a href="javascript:void(0)" class="expander-trigger expander-hidden">Expandable section</a>
-				  <div class="expander-content">
-				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio mollitia fugiat facilis enim accusamus quisquam aut, repellendus incidunt quod optio facere labore illo numquam ipsum beatae vero debitis, fugit excepturi.</p>
-				  </div>
-				</div>
 				</article>
-				<article>
-					<?php while ( have_posts() ) : the_post(); ?>
-
-	 					<?php get_template_part( 'template-parts/content', 'page' ); ?> 
-		
-					<?php endwhile; // end of the loop. ?>
-				</article> 
 			</main><!-- #main -->
 		</section> <!-- section -->	
 	</div> <!-- #primary -->
