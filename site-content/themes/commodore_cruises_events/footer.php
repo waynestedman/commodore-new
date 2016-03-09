@@ -11,10 +11,12 @@
 
 ?>
 
-	</div><!-- #content -->
+<!--	</div> #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<?php get_sidebar( 'Footer' ); ?> 
+		<h3>Widgets go here</h3>
+		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer') ) ?> 
+		<h4>end of widgets</h4>
 		<div class="site-info">
 			<p>Copyright &copy <?php echo date('Y'); ?> &middot; <a href="http://www.commodoreevents.com/" >Commodore Cruises & Events, Inc.</a> &middot; All Rights Reserved
 			<span class="sep"> &middot; </span>

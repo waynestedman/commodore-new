@@ -111,8 +111,8 @@ function commodore_cruises_events_widgets_init() {
 		'name'          => esc_html__( 'Footer', 'commodore_cruises_events' ),
 		'id'            => 'sidebar-2',
 		'description'   => 'Footer widgets', 
-		'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
-		'after_widget'  => '</aside>',
+		'before_widget' => '<section id="%1$s" class="footer-widget %2$s">',
+		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );

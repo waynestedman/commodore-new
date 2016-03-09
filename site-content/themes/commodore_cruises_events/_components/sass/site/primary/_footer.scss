@@ -3,7 +3,7 @@
 	width: $size__site-main;
 	color: $comm-med-blue; 
 	background: $comm-gray;
-	font-size: 1rem;
+	@include font-size(1);
 	
 	a {
 		text-decoration: none;
@@ -28,8 +28,7 @@
 			li {
 				display: block;
 				text-decoration: underline;
-				font-size: 20px;
-				font-size: 1.25rem;
+				@include font-size(1.25);
 				letter-spacing: 2.5px;
 				margin-bottom: 12px;
 				margin-bottom: 0.75rem;
@@ -48,8 +47,7 @@
 
 .site-info {
 	margin: 0 auto;
-	font-size: 12px;
-	font-size: 0.75rem;
+	@include font-size(0.75);
 	text-align: center;
 	color: darken($comm-med-blue, 8%);
 

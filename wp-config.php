@@ -1,6 +1,9 @@
 <?php
-//The entry below were created by iThemes Security to disable the file editor
-define( 'DISALLOW_FILE_EDIT', true );
+
+// BEGIN iThemes Security - Do not modify or remove this line
+// iThemes Security Config Details: 2
+define( 'DISALLOW_FILE_EDIT', true ); // Disable File Editor - Security > Settings > WordPress Tweaks > File Editor
+// END iThemes Security - Do not modify or remove this line
 
 //Do not delete these. Doing so WILL break your site.
 define( 'WP_CONTENT_URL', 'http://localhost/Commodore-new/site-content' );
