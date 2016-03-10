@@ -7,6 +7,10 @@
 	
 	a {
 		text-decoration: none;
+
+		&:hover {
+			color: tint($comm-med-blue, 30%);
+		} // :hover
 	} // a
 } // .site-footer
 
@@ -27,14 +31,21 @@
 
 			li {
 				display: block;
-				text-decoration: underline;
 				@include font-size(1.25);
 				letter-spacing: 2.5px;
 				margin-bottom: 12px;
 				margin-bottom: 0.75rem;
+				border-bottom: 1px solid #555;
+				width: 200px;
 
+				
 				a {
-					color: #ffffff;
+					color: $comm-med-blue;
+					transition: color 150ms ease;
+
+					&:hover {
+						color: tint($comm-med-blue, 30%);
+					} // :hover
 				}// a
 			} // li
  		} // ul
@@ -49,12 +60,16 @@
 	margin: 0 auto;
 	@include font-size(0.75);
 	text-align: center;
-	color: darken($comm-med-blue, 8%);
+	color: $comm-med-blue;
 
 	p {
 		color: #ccc;
 	}
 	a {
-		color: darken($comm-med-blue, 8%);
+		color: $comm-med-blue;
+		
+		&:hover {
+			color: tint($comm-med-blue, 30%);
+		} // :hover
 	} // a
 } // .site-info

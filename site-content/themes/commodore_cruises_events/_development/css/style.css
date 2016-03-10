@@ -269,33 +269,75 @@ th {
 /* ---- Imported ------------------------------ */
 /*--------- # Mixins ---------*/
 .event-type0 {
-  background: #1ecaff;
+  background: #1abbec;
+  transition: background 150ms ease;
+  color: #333;
+  transition: color 150ms ease;
   flex: 1;
+}
+.event-type0:hover {
+  background: #5fcff2;
+  color: #5c5c5c;
 }
 
 .event-type1 {
-  background: #19c9ff;
+  background: #1ab9ea;
+  transition: background 150ms ease;
+  color: #333;
+  transition: color 150ms ease;
   flex: 1;
+}
+.event-type1:hover {
+  background: #5fcef0;
+  color: #5c5c5c;
 }
 
 .event-type2 {
-  background: #0ac5ff;
+  background: #19b4e3;
+  transition: background 150ms ease;
+  color: #333;
+  transition: color 150ms ease;
   flex: 1;
+}
+.event-type2:hover {
+  background: #5ecbeb;
+  color: #5c5c5c;
 }
 
 .event-type3 {
-  background: #00b7ef;
+  background: #18aad7;
+  transition: background 150ms ease;
+  color: #333;
+  transition: color 150ms ease;
   flex: 1;
+}
+.event-type3:hover {
+  background: #5dc4e3;
+  color: #5c5c5c;
 }
 
 .event-type4 {
-  background: #009ccb;
+  background: #169dc6;
+  transition: background 150ms ease;
+  color: #333;
+  transition: color 150ms ease;
   flex: 1;
+}
+.event-type4:hover {
+  background: #5cbad7;
+  color: #5c5c5c;
 }
 
 .event-type5 {
-  background: #00789e;
+  background: #148cb1;
+  transition: background 150ms ease;
+  color: #333;
+  transition: color 150ms ease;
   flex: 1;
+}
+.event-type5:hover {
+  background: #5bafc8;
+  color: #5c5c5c;
 }
 
 /*--------- # Base (Bitters) and Neat ---------*/
@@ -1009,6 +1051,7 @@ a:visited {
   display: none;
 }
 
+/* Footer widgets are styled in _footer.scss */
 /*--------- # Content ---------*/
 /*--------------------------------------------------------------
 ## header
@@ -1109,6 +1152,13 @@ a:visited {
 .site-content .content-area .events-list .main-event-type {
   flex: 2;
   background: #ffcf8a;
+  transition: background 150ms ease;
+  color: #333;
+  transition: color 150ms ease;
+}
+.site-content .content-area .events-list .main-event-type:hover {
+  background: #ffddad;
+  color: #5c5c5c;
 }
 
 .site-main {
@@ -1192,6 +1242,9 @@ a:visited {
 .site-footer a {
   text-decoration: none;
 }
+.site-footer a:hover {
+  color: #78aad7;
+}
 
 .footer-widgets {
   width: 100%;
@@ -1210,15 +1263,20 @@ a:visited {
 }
 .footer-widgets .footer-widget ul li {
   display: block;
-  text-decoration: underline;
   font-size: 20px;
   font-size: 1.25rem;
   letter-spacing: 2.5px;
   margin-bottom: 12px;
   margin-bottom: 0.75rem;
+  border-bottom: 1px solid #555;
+  width: 200px;
 }
 .footer-widgets .footer-widget ul li a {
-  color: #ffffff;
+  color: #3e85c6;
+  transition: color 150ms ease;
+}
+.footer-widgets .footer-widget ul li a:hover {
+  color: #78aad7;
 }
 
 .footer-widgets:before {
@@ -1230,13 +1288,16 @@ a:visited {
   font-size: 12px;
   font-size: 0.75rem;
   text-align: center;
-  color: #3270a9;
+  color: #3e85c6;
 }
 .site-info p {
   color: #ccc;
 }
 .site-info a {
-  color: #3270a9;
+  color: #3e85c6;
+}
+.site-info a:hover {
+  color: #78aad7;
 }
 
 /*--------- # Infinite scroll ---------*/

@@ -25,16 +25,20 @@
 // Darkening event type boxes
 @mixin colored-event-types ($count, $baseName, $startcolor) {
     @for $i from 0 through $count {
-      $background-color: darken($startcolor, $i * $i); 
+      $background-color: shade($startcolor, $i * $i); 
     	.event-type#{$i} {
 	      background: $background-color;
+	      transition: background 150ms ease; 
+	      color: $comm-gray;
+	      transition: color 150ms ease;
 	      flex: 1;
-	      //height:100px;
-	      //width:200px;
-	      //float: left;
-	      //margin-right: 5px;
+
+	      &:hover {
+				background: tint($background-color, 30%);
+				color: tint($comm-gray, 20%);
+			} // :hover
 	    } // event-type
    } // for
 } // mixin
 
-@include colored-event-types(5,'a', lighten($comm-lt-blue, 10%) );
+@include colored-event-types(5,'a', tint($comm-lt-blue, 10%) );

@@ -85,6 +85,14 @@
 			.main-event-type {
 				flex: 2;
 				background: $comm-gold;
+				transition: background 150ms ease; 
+	      	color: $comm-gray;
+	      	transition: color 150ms ease;
+
+				&:hover {
+					background: tint($comm-gold, 30%);
+					color: tint($comm-gray, 20%);
+				} // :hover
 			} // main-event-type
 	// for .event-type# styles see mixins-master
 		} // events-list
