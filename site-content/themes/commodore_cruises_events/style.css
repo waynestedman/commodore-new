@@ -22,8 +22,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Bourbon
 # Normalize
+# Bourbon
 # Base Variables
 # Mixins
 # Base (Bitters) and Neat
@@ -47,7 +47,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 	## Cards
 --------------------------------------------------------------*/
-/*--------- # Bourbon ---------*/
 /*--------- # Normalize ---------*/
 html {
   font-family: sans-serif;
@@ -265,6 +264,7 @@ th {
   padding: 0;
 }
 
+/*--------- # Bourbon ---------*/
 /*--------- # Base Variables ---------*/
 /* ---- Imported ------------------------------ */
 /*--------- # Mixins ---------*/
@@ -1496,7 +1496,6 @@ picture {
   border-radius: 3px;
   border: 1px solid #ddd;
   box-shadow: 0 2px 4px #e6e6e6;
-  cursor: pointer;
   margin: 0 1rem 1.5rem 1rem;
   position: relative;
 }
@@ -1547,12 +1546,6 @@ picture {
   padding: 0.75rem 0.75rem;
   margin: 0 0 0.75rem;
 }
-.card:focus, .card:hover {
-  cursor: pointer;
-}
-.card:focus img, .card:hover img {
-  opacity: 0.7;
-}
 .card:active {
   background-color: #f7f7f7;
 }
@@ -1598,5 +1591,7 @@ picture {
 .expander .expander-hidden + .expander-content {
   display: none;
 }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

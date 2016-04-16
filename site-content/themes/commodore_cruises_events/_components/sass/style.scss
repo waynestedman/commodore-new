@@ -23,8 +23,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Bourbon
 # Normalize
+# Bourbon
 # Base Variables
 # Mixins
 # Base (Bitters) and Neat
@@ -48,11 +48,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 	## Cards
 --------------------------------------------------------------*/
-/*--------- # Bourbon ---------*/
-@import "bourbon/bourbon";
-
 /*--------- # Normalize ---------*/
 @import "normalize";
+
+/*--------- # Bourbon ---------*/
+@import "bourbon/bourbon";
 
 /*--------- # Base Variables ---------*/
 @import "base/variables";

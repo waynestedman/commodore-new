@@ -7,25 +7,23 @@ Class SIS_Admin_Main {
 	}
 
 	/**
+	 * Register all the assets for the admin
+	 *
 	 *
 	 */
 	public static function register_assets() {
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG === true ? '' : '.min';
 		// Add javascript
 		wp_register_script( 'underscore', 'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.0/underscore-min.js', array(), '1.8.0' );
-		wp_register_script( 'sis_js', SIS_URL . 'assets/js/sis' . $suffix . '.js', array(
+		wp_register_script( 'sis_js', SIS_URL . 'assets/js/dist/app' . $suffix . '.js', array(
 			'jquery',
 			'jquery-ui-button',
 			'jquery-ui-progressbar',
 			'underscore',
 		), SIS_VERSION );
 
-		// Differencitate the scripts
-		wp_register_script( 'sis_js_attachments', SIS_URL . 'assets/js/sis-attachments' . $suffix . '.js', array( 'jquery' ), SIS_VERSION );
-
-		// Add javascript translation
+		// Add javascript translations
 		wp_localize_script( 'sis_js', 'sis', self::localize_vars() );
-		wp_localize_script( 'sis_js_attachments', 'sis', self::localize_vars() );
 
 		// Add CSS
 		wp_enqueue_style( 'sis_css', SIS_URL . 'assets/css/sis-style' . $suffix . '.css', array(), SIS_VERSION );
@@ -223,27 +221,6 @@ Class SIS_Admin_Main {
 		return $crops[ $crop_position ];
 	}
 
-
-	/**
-	 * Display a json encoded element with right headers
-	 *
-	 * @param $data (optional) : the element to display ( if needed )
-	 *
-	 * @return void
-	 * @author Nicolas Juen
-	 */
-	public static function display_json( $data = array() ) {
-		if ( function_exists( 'wp_send_json' ) ) {
-			wp_send_json( $data );
-		}
-
-		header( 'Cache-Control: no-cache, must-revalidate' );
-		header( 'Expires: Mon, 26 Jul 1997 05:00:00 GMT' );
-		header( 'Content-type: application/json' );
-		echo json_encode( $data );
-		die();
-	}
-
 	/**
 	 * Generate post thumbnail attachment meta data.
 	 *
@@ -251,6 +228,8 @@ Class SIS_Admin_Main {
 	 *
 	 * @param int $attachment_id Attachment Id to process.
 	 * @param string $file Filepath of the Attached image.
+	 *
+	 * @param null|array $thumbnails: thumbnails to regenerate, if null all
 	 *
 	 * @return mixed Metadata for attachment.
 	 */

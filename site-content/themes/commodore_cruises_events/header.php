@@ -21,7 +21,7 @@
 // Picture element HTML5 shiv
    document.createElement( "picture" );
 </script>
-<script src="site-content/themes/commodore_cruises_events/js/picturefill.min.js" async></script>
+<script src="http://localhost/Commodore-new/site-content/themes/commodore_cruises_events/js/picturefill.min.js" async></script>
 
 <!-- TypeKit code -->
 <script>

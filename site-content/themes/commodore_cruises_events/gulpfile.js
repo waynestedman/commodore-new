@@ -48,13 +48,16 @@ gulp.task('js', function() {
 
 gulp.task('compass', function() {
 	gulp.src('_components/sass/*')
+		.pipe(sourcemaps.init())
 		.pipe(compass({
+			sourcemap: true,
+			style: sassStyle,
 			css: '_development/css',
 			sass: '_components/sass',
-			image: 'images',
-			style: sassStyle
+			image: 'images'
 		}))
 		.on('error', gutil.log)
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(outputDir + 'css'))
 });
 

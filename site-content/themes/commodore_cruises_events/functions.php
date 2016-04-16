@@ -137,7 +137,7 @@ function commodore_cruises_events_scripts() {
   		
 // Colorbox jQuery plugin js file
    wp_enqueue_script( 'commodore_cruises_events-colorbox', get_template_directory_uri() . '/colorbox/jquery.colorbox-min.js', array( 'jquery' ), '', true );
-      
+
 // Add main.js file
    wp_enqueue_script( 'commodore_cruises_events-scripts', get_template_directory_uri() . '/js/main.js', array(), '20160101', true );
 
