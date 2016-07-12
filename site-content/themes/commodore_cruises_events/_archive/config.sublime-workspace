@@ -1,0 +1,360 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"BACKGROUND",
+				"background-color"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"ba",
+				"background-repeat"
+			],
+			[
+				"h",
+				"h1	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 287.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 189.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/PacWeb/htdocs/NoGen-Test/wp-content/themes/test-site/process/sass/style.scss",
+		"/Users/PacWeb/htdocs/NoGen-Test/wp-content/themes/test-site-child/sass/style.scss",
+		"/Users/PacWeb/htdocs/NoGen-Test/wp-content/themes/commodore_c_e/functions.php",
+		"/Users/PacWeb/htdocs/NoGen-Test/wp-content/themes/commodore_c_e/colorbox/colorbox.css",
+		"/Users/PacWeb/htdocs/NoGen-Test/wp-content/themes/commodore_c_e/js/main.js",
+		"/Users/PacWeb/htdocs/NoGen-Test/wp-content/themes/commodore_c_e/_components/js/script.js",
+		"/Users/PacWeb/htdocs/NoGen-Test/wp-content/themes/commodore_c_e/page-home.php",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/Updated files/style-css/081915/style.css",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/Updated files/style-css/080715/style.css",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/Updated files/Functions-php/080615/functions.php",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/animated header/add to FoSOTA header animation HTML file.txt",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/animated header/fosota-header-2/publish/web/fosota-header-2.html",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/animated header/fosota-header-2/fosota-header-2.html",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/animated header/rd index file/index.html",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/animated header/fosota-header/rd index/index.html",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/animated header/fosota-header/fosota-header.html",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/animated header/fosota-header/publish/web/fosota-header.html",
+		"/Applications/MAMP/htdocs/PacWeb-New/site-content/themes/pac_web/sass/style.scss",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/Updated files/031015/updated/wp config/wp-config.php",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/Updated files/031015/updated/style.css",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/Updated files/031015/server backup - post update/style.css",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/Updated files/031015/pre-update from server/functions.php",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/Updated files/031015/server backup - post update/functions.php",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/Updated files/031015/server backup - post update/blue.css",
+		"/Users/PacWeb/Documents/Clients/FoSOTA/Updated files/031015/updated/styles/blue.css",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/Creative/Animations/Index file linking to animations/index.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/Creative/Animations/lipid example/lipids-1/publish/web/lipids-1-3.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/Creative/Animations/growing ideas animation/growing-ideas-2/publish/web/growing-ideas-2-2.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/Creative/Animations/growing ideas animation/growing-ideas-2/publish/web/growing-ideas-2.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/Creative/website/Animations/growing ideas animation/growing-ideas-2/publish/web/growing-ideas-2-2.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/Creative/website/Animations/growing ideas animation/growing-ideas-2/growing-ideas-2-2.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/Creative/website/Animations/Index file linking to animations/index.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/Creative/website/Animations/growing ideas animation/growing-ideas-2/publish/web/growing-ideas-2.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/Creative/website/Animations/lipid example/lipids-1/publish/web/index.html",
+		"/Users/PacWeb/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/PacWeb/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/PacWeb/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Applications/MAMP/htdocs/PacWeb/wp-content/themes/smoothpost2/functions.php",
+		"/Applications/MAMP/htdocs/es-test_2/wp-content/uploads/edge_suite/project/pwf-logo-1-4_1/pwf-logo-1-4.html",
+		"/Applications/MAMP/htdocs/PacWeb/wp-content/themes/_file-backups/smoothpost2/functions 120514.php",
+		"/Applications/MAMP/htdocs/PacWeb/wp-content/themes/smoothpost2/page_landing.php",
+		"/Applications/MAMP/htdocs/PacWeb/wp-content/themes/smoothpost2/style.css",
+		"/Applications/MAMP/htdocs/PacWeb/wp-content/themes/_file-backups/smoothpost2/style 120514.css",
+		"/Applications/MAMP/htdocs/PacWeb/wp-content/themes/_file-backups/smoothpost2/style 202 original.css",
+		"/Applications/MAMP/htdocs/PacWeb/wp-content/themes/smoothpost2/functions-backup-120514.php",
+		"/Applications/MAMP/htdocs/es-test_2/wp-content/themes/twentyfourteen/functions.php",
+		"/Applications/MAMP/htdocs/es-test_2/wp-content/themes/twentyfourteen/inc/custom-header.php",
+		"/Applications/MAMP/htdocs/es-test_2/wp-content/themes/twentyfourteen/style.css",
+		"/Applications/MAMP/htdocs/es-test_2/wp-content/themes/twentyfourteen/style-backup.css",
+		"/Applications/MAMP/htdocs/es-test_2/wp-config.php",
+		"/Applications/MAMP/htdocs/es-test_2/wp-settings.php",
+		"/Applications/MAMP/htdocs/es-test/wp-content/plugins/edge-suite-wp-ea5/includes/edge-suite-comp-builder.inc",
+		"/Applications/MAMP/htdocs/es-test/wp-content/plugins/edge-suite-wp-ea5/includes/edge-wordpress.js",
+		"/Applications/MAMP/htdocs/test/wp-content/themes/genesis-sample/functions.php",
+		"/Applications/MAMP/htdocs/test/wp-content/themes/genesis-sample/header.php",
+		"/Applications/MAMP/htdocs/test/wp-content/themes/genesis-sample/edge-header.php",
+		"/Applications/MAMP/htdocs/test/wp-content/themes/genesis/lib/structure/header.php",
+		"/Applications/MAMP/htdocs/test/wp-config.php",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/R and D/Edge Animate/menu examples/publish/web/menu-example.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/R and D/Edge Animate/RWD example/pac-web-rwd/publish/web/pac-web-rwd.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/R and D/Edge Animate/RWD example/pac-web-rwd/publish/web/_server copy/pac-web-rwd.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/R and D/Edge Animate/menu examples/menu-example.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/R and D/Edge Animate/Menu Test/menu-test.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/R and D/Edge Animate/Menu Test/publish/web/menu-test.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/R and D/Edge Animate/button test/button-test/button-test.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/R and D/Edge Animate/menu examples/menu-example/publish/web/menu-example.html",
+		"/Users/PacWeb/Documents/Clients/Commodore/website/working version/public-cruises.html",
+		"/Users/PacWeb/Documents/Clients/Commodore/website/working version/meet-the-fleet.html",
+		"/Users/PacWeb/Documents/Clients/Commodore/website/working version/public-cruises-backup-101714.html",
+		"/Applications/MAMP/htdocs/PacWeb/menu-example/menu-example.html",
+		"/Applications/MAMP/htdocs/PacWeb/pwf-sim/pac-web-rwd.html",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/R and D/Edge Animate/menu examples/menu-example/menu-example.html",
+		"/Applications/MAMP/htdocs/PacWeb/pwf-sim/_backups/pac-web-rwd-100914.html",
+		"/Applications/MAMP/htdocs/PacWeb/pwf-sim/pac-web-rwd-100914.html",
+		"/Users/PacWeb/Documents/Clients/Scott Flaxman/Scott A Flaxman website/thank you site/index.html",
+		"/Applications/MAMP/htdocs/PacWeb/_Updated files for website/100714/custom_functions.php",
+		"/Applications/MAMP/htdocs/PacWeb/_fonts-com/pac_web-03102014/demo.htm",
+		"/Applications/MAMP/htdocs/PacWeb/_fonts-com/pac_web-03102014/demo.css",
+		"/Applications/MAMP/htdocs/PacWeb/_Updated files for website/100114/server original/style.css",
+		"/Applications/MAMP/htdocs/PacWeb/wp-content/themes/smoothpost2/custom/custom_functions.php",
+		"/Applications/MAMP/htdocs/PacWeb/wp-content/themes/smoothpost2/lib/css/icomoon.css",
+		"/Applications/MAMP/htdocs/PacWeb/wp-content/themes/smoothpost2/lib/css/font-awesome.css",
+		"/Users/PacWeb/Documents/Pacific Web Foundry/Creative/website/web icons/091614/icomoon/demo.html",
+		"/Applications/MAMP/htdocs/PacWeb/PavWeb-local.sublime-project",
+		"/Users/PacWeb/Documents/Clients/Amber Regina/website/backups of staging site/090514 - partial/site files/wp-content/themes/clipcart/woocommerce/product category loop",
+		"/Users/PacWeb/Documents/Clients/Fiorella Ins/Reform Experts/backups/082814/site files/wp-content/themes/readyfolio2/custom/custom_functions.php",
+		"/Users/PacWeb/Documents/Clients/Fiorella Ins/Reform Experts/backups/082814/site files/wp-content/themes/readyfolio2/functions.php",
+		"/Users/PacWeb/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Applications/MAMP/htdocs/PacWeb2/wp-content/themes/twentytwelve/functions.php",
+		"/Applications/MAMP/htdocs/PacWeb2/wp-content/themes/newPacWeb/functions.php",
+		"/Applications/MAMP/htdocs/PacWeb2/wp-content/themes/genesis/lib/structure/header.php",
+		"/Applications/MAMP/htdocs/PacWeb2/index.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Applications/MAMP/htdocs/es-test",
+			"/Applications/MAMP/htdocs/test/wp-content/themes",
+			"/Applications/MAMP/htdocs/test/wp-content/themes/genesis-sample",
+			"",
+			"/Users/PacWeb/Documents/Clients/Amber Regina/website/backups of staging site/090514 - partial/site files/wp-content",
+			"/Users/PacWeb/Documents/Clients/Amber Regina/website/backups of staging site/090514 - partial/site files/wp-content/themes/clipcart",
+			"/Users/PacWeb/Documents/Clients/Fiorella Ins/Reform Experts/backups/082814/site files/wp-content/plugins/gravityforms",
+			"/Users/PacWeb/Documents/Clients/Fiorella Ins/Reform Experts/backups/082814/site files",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"1152",
+			"header-widget-area",
+			"widget-area",
+			"header-widget-area",
+			"- Widgets",
+			"title-area",
+			"site-title",
+			"logo",
+			"grey",
+			"brush",
+			"brushstroke",
+			"brush",
+			"twentyfourteen_header_style",
+			"header",
+			"es-test",
+			"edgePreload.js",
+			"genesis_header",
+			"5C9C4F",
+			" be_title_toggle",
+			" be_title_toggle_post_types",
+			"roboto",
+			"roboto slab",
+			"footer_genesis_link",
+			"66ab58",
+			"5a8552",
+			"3e7b7a\n3e7b7a\n3e7b7a\n3e7b7a\n5a8552",
+			"5d9d50",
+			"6ab05b",
+			"7bcc6b",
+			"portfolio",
+			".fa",
+			"portfolio",
+			":200",
+			"product_category",
+			"product category",
+			"product_category",
+			" $entry['38.4']",
+			"id: 2",
+			"enrollment",
+			"template_enroll_custom.php",
+			":99",
+			"site description"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"4b9694",
+			"Jeunesse W01 Bold",
+			"53a7a5",
+			"3e7b7a",
+			"4b9694",
+			"53a7a5",
+			"4b9694",
+			".ic"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "config.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 394.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
